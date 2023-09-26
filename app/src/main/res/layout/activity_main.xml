@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/heart"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/heart_foreground"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <Button
+        android:id="@+id/setting"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/config_foreground"
+        tools:layout_editor_absoluteX="192dp"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <Button
+        android:id="@+id/info"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/info_foreground"
+        tools:layout_editor_absoluteX="252dp"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <Button
+        android:id="@+id/addAlarm"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/agregar_foreground"
+        android:textStyle="bold"
+        android:onClick="abrirCrearAlarma"
+        tools:layout_editor_absoluteX="314dp"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="90dp"
+        android:layout_height="44dp"
+        android:text="Alarma"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="132dp" />
+</android.support.constraint.ConstraintLayout>
