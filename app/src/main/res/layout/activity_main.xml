@@ -1,45 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
-
-
-    <Button
-        android:id="@+id/heart"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/heart_foreground"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="42dp" />
-
-    <Button
-        android:id="@+id/setting"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/config_foreground"
-        tools:layout_editor_absoluteX="192dp"
-        tools:layout_editor_absoluteY="42dp" />
 
     <Button
         android:id="@+id/info"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@drawable/info_foreground"
-        tools:layout_editor_absoluteX="252dp"
-        tools:layout_editor_absoluteY="42dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.766"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <Button
+        android:id="@+id/setting"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/config_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <Button
+        android:id="@+id/heart"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/heart_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.424"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
 
     <Button
         android:id="@+id/addAlarm"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@drawable/agregar_foreground"
-        android:textStyle="bold"
         android:onClick="abrirCrearAlarma"
-        tools:layout_editor_absoluteX="314dp"
-        tools:layout_editor_absoluteY="42dp" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
 
     <TextView
         android:id="@+id/textView"
@@ -49,6 +64,13 @@
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="132dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22" />
+
+
+
 </android.support.constraint.ConstraintLayout>

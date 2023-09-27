@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Recomendaciones">
+
+    <Button
+        android:id="@+id/heart4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/heart_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.826" />
+
+    <Button
+        android:id="@+id/heart3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/heart_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.624" />
+
+    <Button
+        android:id="@+id/heart2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/heart_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.427" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="305dp"
+        android:layout_height="76dp"
+        android:text="Limita el consumo de alimentos procesados y azúcares añadidos para mantener una dieta equilibrada."
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="373dp" />
+
+    <Button
+        android:id="@+id/heart"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/heart_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="81dp"
+        android:layout_height="25dp"
+        android:text="Elección"
+        android:textColor="#070707"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="352dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="81dp"
+        android:layout_height="25dp"
+        android:text="Porciones"
+        android:textColor="#070707"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="459dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="305dp"
+        android:layout_height="76dp"
+        android:text="Controla tus porciones para evitar el exceso de calorías; presta atención a las señales de saciedad de tu cuerpo."
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="480dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="305dp"
+        android:layout_height="76dp"
+        android:text="Incorpora variedad de colores en tu plato para asegurarte de obtener una amplia gama de nutrientes de frutas y verduras."
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="263dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="81dp"
+        android:layout_height="25dp"
+        android:text="Color"
+        android:textColor="#070707"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="242dp" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="48dp"
+        android:layout_height="38dp"
+        android:background="@drawable/back_foreground"
+        android:onClick="abrirCrearAlarma"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="250dp"
+        android:layout_height="41dp"
+        android:text="Recomendaciones"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.154" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="81dp"
+        android:layout_height="25dp"
+        android:text="Agua"
+        android:textColor="#070707"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="135dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="305dp"
+        android:layout_height="76dp"
+        android:text="Bebe suficiente agua a lo largo del día para mantenerte hidratado y apoyar una digestión saludable; evita las bebidas azucaradas y el exceso de cafeína."
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="156dp" />
+
+</android.support.constraint.ConstraintLayout>

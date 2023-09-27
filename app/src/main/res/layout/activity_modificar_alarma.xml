@@ -4,21 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CrearAlarma">
+    tools:context=".ModificarAlarma">
+
 
     <Button
         android:id="@+id/back"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
+        android:layout_width="102dp"
+        android:layout_height="97dp"
         android:background="@drawable/back_foreground"
         android:onClick="abrirCrearAlarma"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.028" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/heart"
@@ -57,17 +58,17 @@
 
     <Button
         android:id="@+id/addAlarm"
-        android:layout_width="45dp"
-        android:layout_height="42dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:background="@drawable/agregar_foreground"
         android:onClick="abrirCrearAlarma"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.032" />
+        app:layout_constraintVertical_bias="0.025" />
 
     <Button
         android:id="@+id/info"
@@ -80,6 +81,8 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
+
+
 
 
     <TextView
@@ -112,7 +115,6 @@
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="178dp" />
-
     <TextView
         android:id="@+id/fecha"
         android:layout_width="209dp"
