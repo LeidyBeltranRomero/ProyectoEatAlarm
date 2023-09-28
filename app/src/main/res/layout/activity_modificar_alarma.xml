@@ -6,84 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".ModificarAlarma">
 
-
     <Button
         android:id="@+id/back"
-        android:layout_width="102dp"
-        android:layout_height="97dp"
+        android:layout_width="48dp"
+        android:layout_height="38dp"
         android:background="@drawable/back_foreground"
-        android:onClick="abrirCrearAlarma"
+        android:onClick="abrirListaAlarmas"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/heart"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/heart_foreground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025" />
-
-    <Button
-        android:id="@+id/setting"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/config_foreground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.669"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.047" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="178dp"
-        android:layout_height="29dp"
-        android:text="Crear Alarma"
+        android:layout_width="267dp"
+        android:layout_height="30dp"
+        android:text="Modificar Alarma"
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="104dp" />
-
-    <Button
-        android:id="@+id/addAlarm"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/agregar_foreground"
-        android:onClick="abrirCrearAlarma"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.263"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025" />
-
-    <Button
-        android:id="@+id/info"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/info_foreground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.84"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
-
-
-
+        app:layout_constraintVertical_bias="0.176" />
 
     <TextView
         android:id="@+id/nombre"
@@ -103,18 +53,22 @@
         android:layout_width="338dp"
         android:layout_height="39dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/common_form_field"
         android:minHeight="48dp"
         android:paddingStart="24dp"
-        android:textColor="#2B4181"
-        android:textColorHint="#213B87"
-        android:textSize="20sp"
+        android:textColor="#565151"
+        android:textColorHint="#565151"
+        android:textSize="15sp"
+        android:hint="Desayuno"
         app:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintHorizontal_bias="0.536"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="178dp" />
+        app:layout_constraintTop_toBottomOf="@+id/nombre"
+        app:srcCompat="@+id/textView"/>
+
     <TextView
         android:id="@+id/fecha"
         android:layout_width="209dp"
@@ -133,18 +87,36 @@
         android:layout_width="338dp"
         android:layout_height="39dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/common_form_field"
+        android:clickable="false"
+        android:focusable="false"
+        android:inputType="date"
         android:minHeight="48dp"
         android:paddingStart="24dp"
-        android:textColor="#2B4181"
-        android:textColorHint="#213B87"
-        android:textSize="20sp"
+        android:textColor="#565151"
+        android:textColorHint="#565151"
+        android:textSize="15sp"
+        android:hint="29/09/2023"
         app:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="245dp" />
+        app:layout_constraintTop_toBottomOf="@+id/fecha"
+        app:srcCompat="@+id/textView" />
+
+    <Button
+        android:id="@+id/flechafecha"
+        android:layout_width="35dp"
+        android:layout_height="38dp"
+        android:background="@drawable/deplegar_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.428" />
 
     <TextView
         android:id="@+id/cantidadComidas"
@@ -158,23 +130,22 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/cantidadComidasLabel"
-        android:layout_width="338dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/common_form_field"
-        android:minHeight="48dp"
-        android:paddingStart="24dp"
-        android:textColor="#2B4181"
-        android:textColorHint="#213B87"
-        android:textSize="20sp"
-        app:autoSizeTextType="uniform"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.536"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="318dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="328dp"
+        android:layout_height="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:textColor="#565151"
+        android:textColorHint="#565151"
+        app:backgroundTint="#E0E7FB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563" />
 
     <TextView
         android:id="@+id/horaComida"
@@ -189,61 +160,57 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.626" />
 
-    <EditText
-        android:id="@+id/horaComidaLabel"
-        android:layout_width="338dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/common_form_field"
-        android:minHeight="48dp"
-        android:paddingStart="24dp"
-        android:textColor="#2B4181"
-        android:textColorHint="#213B87"
-        android:textSize="20sp"
-        app:autoSizeTextType="uniform"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="392dp" />
+    <Spinner
+        android:id="@+id/spinnerhoraPrimeraComida"
+        android:layout_width="328dp"
+        android:layout_height="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:textColor="#565151"
+        android:textColorHint="#565151"
+        app:backgroundTint="#E0E7FB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.696" />
 
     <TextView
         android:id="@+id/horaPrimeraComida"
         android:layout_width="314dp"
         android:layout_height="18dp"
-        android:text="Hora en que inicia la primera comida"
+        android:text="¿Cuantas veces al dias vas a comer?"
         android:textColor="#130F0F"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.381"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.752" />
+        app:layout_constraintVertical_bias="0.752"/>
 
-    <EditText
-        android:id="@+id/horaPrimeraLabel"
-        android:layout_width="338dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/common_form_field"
-        android:minHeight="48dp"
-        android:paddingStart="24dp"
-        android:textColor="#2B4181"
-        android:textColorHint="#213B87"
-        android:textSize="20sp"
-        app:autoSizeTextType="uniform"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="465dp" />
+    <Spinner
+        android:id="@+id/spinnerVecesAlDia"
+        android:layout_width="328dp"
+        android:layout_height="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:textColor="#565151"
+        android:textColorHint="#565151"
+        app:backgroundTint="#E0E7FB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.819" />
 
     <Button
         android:id="@+id/guardar"
         android:layout_width="114dp"
         android:layout_height="115dp"
         android:background="@mipmap/guar_foreground"
-        android:onClick="abrirCrearAlarma"
+        android:onClick="abrirListaAlarmas"
         android:scrollbarDefaultDelayBeforeFade="50"
         android:scrollbarFadeDuration="50"
         android:textStyle="bold"
@@ -259,12 +226,12 @@
         android:layout_width="123dp"
         android:layout_height="118dp"
         android:background="@mipmap/cancelar_foreground"
-        android:onClick="abrirCrearAlarma"
+        android:onClick="abrirListaAlarmas"
         android:scrollbarDefaultDelayBeforeFade="50"
         android:scrollbarFadeDuration="50"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintHorizontal_bias="0.548"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"

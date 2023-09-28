@@ -1,0 +1,8 @@
+<resources>
+
+    <string-array name="horas1">
+        <item> 8:00 am</item>
+        <item>10:00 am</item>
+        <item>12:00 am</item>
+    </string-array>
+</resources>

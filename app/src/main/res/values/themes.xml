@@ -4,7 +4,24 @@
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryDark">@color/purple_700</item>
-        <item name="colorAccent">@color/teal_200</item>
+
+
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="DatePickerTheme" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:colorAccent">#006FFD</item>
+        <item name="android:headerBackground">#006FFD</item>
+        <item name="colorPrimary">#006FFD</item>
+    </style>
+
+    <style name="mySpinnerItemStyle" parent="Base.Widget.AppCompat.Spinner">
+        <item name="android:textColor">#006FFD</item>
+    </style>
+
+    <style name="myDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">#006FFD</item>
+        <item name="colorPrimary">#006FFD</item>
+    </style>
+
 </resources>
